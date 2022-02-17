@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  background-image: url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.inputBox input {
+  margin: 30px 0;
+  outline: none;
+  background-color: transparent;
+  width: 70%;
+  padding: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.inputBox input::placeholder {
+  padding-left: 10px;
+}
+.detailBox {
+  /* border: 1px solid; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detailBox section {
+  /* border: 1px solid; */
+  width: 70%;
+  /* max-width: 70%; */
+}
+.detailsSection {
+  border: 3px solid white;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.imgBox {
+  /* border: 1px solid; */
+  width: 50%;
+  text-align: center;
+}
+.details {
+  border-left: 3px solid white;
+  height: 500px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 10px 0 10px 20px;
+}
+.detailRes {
+  /* border: 1px solid; */
+}
+.detailRes1 {
+  /* border: 1px solid; */
+}
+.details p,
+.details li {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bolder;
+  list-style: none;
+
+}
+.detailRes1{
+  /* border: 1px solid; */
+  width: 50%;
+
+}
+.detailRes1 li {
+  color: grey;
+}
+@media only screen and (max-width: 730px) {
+  .inputBox input {
+    width: 90%;
+  }
+  .detailBox section {
+    width: 100%;
+    /* height: 40vh; */
+  }
+  .imgBox,
+  .details {
+    width: 100%;
+  }
+  .imgBox {
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+  }
+  .imgBox img {
+    width: 200px;
+  }
+  .details {
+    display: block;
+    /* border: 1px solid; */
+    height: 250px;
+    border-top: 5px solid white;
+  }
+  .detailRes {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+  }
+  .detailRes1 {
+    /* border: 1px solid; */
+    width: 100%;
+    color: gray;
+    display: flex;
+    margin: 0 0 0 0;
+    justify-content: space-evenly;
+  }
+  .detailRes p {
+    border: 3px solid white;
+    border-top: none;
+    width: 120px;
+    text-align: center;
+    /* padding: 5px; */
+  }
+  .detailRes1 li{
+    border: 3px solid white;
+    border-bottom: none;
+    width: 120px;
+    text-align: center;
+  }
+  .leftBor{
+    border-left: none !important;
+  }
+  .rightBor{
+    border-right:none !important ;
+  }
+}
